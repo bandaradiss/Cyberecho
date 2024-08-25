@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Story - CyberEchoo</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CyberEchoo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="share.html">Share Your Story</a></li>
+                <li><a href="stories.html">Latest Stories</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Share Your Story</h2>
+        <form action="submit_story.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Your Name (optional):</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Your Email (optional):</label>
+            <input type="email" id="email" name="email">
+
+            <label for="experience">Describe Your Experience:</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="file">Upload Pictures/Videos (optional):</label>
+            <input type="file" id="file" name="file" accept="image/*,video/*">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 CyberEchoo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
